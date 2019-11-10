@@ -3,10 +3,10 @@ const path = require("path")
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const blogPost = path.resolve(`./src/templates/blog-post-contentful.js`)
+  const blogPost = path.resolve(`./src/templates/blogPost.js`)
   const blog = path.resolve(`./src/templates/blog.js`)
-  const profile = path.resolve(`./src/templates/profile.js`)
-  const profiles = path.resolve(`./src/templates/profiles.js`)
+  const profile = path.resolve(`./src/templates/profileTemplate.js`)
+  const profiles = path.resolve(`./src/templates/profilesTemplate.js`)
   return graphql(
     `
   {

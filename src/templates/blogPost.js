@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const BlogPostContentful = ({ data }) => {
+const BlogPost = ({ data }) => {
   const postTitle = data.contentfulBlogPost.title
   return  (
     <Layout>
@@ -17,7 +17,7 @@ const BlogPostContentful = ({ data }) => {
 }
 
 
-export default BlogPostContentful
+export default BlogPost
 
 export const pageQuery = graphql`
     query($slug: String!) {
