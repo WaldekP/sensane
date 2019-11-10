@@ -4,7 +4,7 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Profiles = ({data}) => {
+const ProfilesTemplate = ({data}) => {
   const profiles = data.allContentfulProfile.edges
   return (
     <Layout>
@@ -20,7 +20,7 @@ const Profiles = ({data}) => {
   )
 }
 
-export default Profiles
+export default ProfilesTemplate
 
 export const query = graphql`
     query ProfilesPageQuery {
