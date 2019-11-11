@@ -1,10 +1,11 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const BlogPost = ({ data }) => {
+
   const postTitle = data.contentfulBlogPost.title
   return  (
     <Layout>

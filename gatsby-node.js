@@ -48,7 +48,7 @@ exports.createPages = ({ graphql, actions }) => {
     const posts = result.data.allContentfulBlogPost.edges
     const profilesList = result.data.allContentfulProfile.edges
 
-    posts.forEach((post, index) => {
+    posts.forEach((post) => {
 
       createPage({
         path: `/blog/${post.node.slug}`,
